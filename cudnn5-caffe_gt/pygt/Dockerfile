@@ -23,7 +23,7 @@ RUN git clone -b v1.5.2rc2 --depth 1 https://github.com/matplotlib/matplotlib.gi
 
 WORKDIR /opt/PyGreentea
 
-ENV CLONE_TAG=issue-dvid
+ENV CLONE_TAG=master
 
 RUN git clone -b ${CLONE_TAG} --depth 1 https://github.com/TuragaLab/PyGreentea.git . && \
     for req in $(cat requirements.txt) pydot; do pip install $req; done && \
