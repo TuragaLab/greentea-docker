@@ -1,3 +1,6 @@
+docker build --pull --no-cache -t turagalab/greentea:cudnn5-caffe_gt-2016.12.05                 ./cudnn5-caffe_gt-2016.12.05
+docker build        --no-cache -t turagalab/greentea:cudnn5-caffe_gt-2016.12.05-pygt-0.9.4b     ./cudnn5-caffe_gt-2016.12.05/pygt-0.9.4b
+
 docker build --pull --no-cache -t turagalab/greentea:cudnn5-caffe_gt-2016.12.02                 ./cudnn5-caffe_gt-2016.12.02
 docker build        --no-cache -t turagalab/greentea:cudnn5-caffe_gt-2016.12.02-pygt-0.9.4b     ./cudnn5-caffe_gt-2016.12.02/pygt-0.9.4b
 
