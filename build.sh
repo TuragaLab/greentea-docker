@@ -1,5 +1,16 @@
-docker build --pull --no-cache -t turagalab/greentea:cudnn5-caffe_gt-2016.12.05                 ./cudnn5-caffe_gt-2016.12.05
-docker build        --no-cache -t turagalab/greentea:cudnn5-caffe_gt-2016.12.05-pygt-0.9.4b     ./cudnn5-caffe_gt-2016.12.05/pygt-0.9.4b
+docker build --pull --no-cache \
+    -t turagalab/greentea:libdnn-caffe_gt-2016.12.05 \
+    ./libdnn-caffe_gt-2016.12.05
+docker build        --no-cache \
+    -t turagalab/greentea:libdnn-caffe_gt-2016.12.05-pygt-0.9.4b \
+    ./libdnn-caffe_gt-2016.12.05/pygt-0.9.4b
+
+docker build --pull --no-cache \
+    -t turagalab/greentea:cudnn5-caffe_gt-2016.12.05 \
+    ./cudnn5-caffe_gt-2016.12.05
+docker build        --no-cache \
+    -t turagalab/greentea:cudnn5-caffe_gt-2016.12.05-pygt-0.9.4b \
+    ./cudnn5-caffe_gt-2016.12.05/pygt-0.9.4b
 
 docker build --pull --no-cache \
     -t turagalab/greentea:cuda8.0-cudnn5-caffe_gt-2016.12.02 \
@@ -22,4 +33,3 @@ docker build        --no-cache -t turagalab/greentea:cudnn5-caffe_gt-pygt-0.9   
 docker build        --no-cache -t turagalab/greentea:cudnn5-caffe_gt-pygt-0.9b                  ./cudnn5-caffe_gt/pygt-0.9b
 docker build        --no-cache -t turagalab/greentea:cudnn5-caffe_gt-pygt-0.9c                  ./cudnn5-caffe_gt/pygt-0.9c
 docker build                   -t turagalab/greentea:cudnn5-caffe_gt-pygt-0.9d                  ./cudnn5-caffe_gt/pygt-0.9d
-
