@@ -1,12 +1,12 @@
 docker build --pull --no-cache \
-    -t turagalab/greentea:cuda8.0-cudnn6+libdnn-caffe_gt-2017.04.17 \
-    ./cuda8.0/cudnn6+libdnn/caffe_gt-2017.04.17/
-docker push turagalab/greentea:cuda8.0-cudnn6+libdnn-caffe_gt-2017.04.17
+    -t turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.04.17 \
+    ./cuda8.0/cudnn6_libdnn/caffe_gt-2017.04.17/
+docker push turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.04.17
 
 docker build --pull --no-cache \
-    -t turagalab/greentea:cuda8.0-cudnn6+libdnn-caffe_gt-2017.04.17-pygt-0.9.4b \
-    ./cuda8.0/cudnn6+libdnn/caffe_gt-2017.04.17/pygt-0.9.4b
-docker push turagalab/greentea:cuda8.0-cudnn6+libdnn-caffe_gt-2017.04.17-pygt-0.9.4b
+    -t turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.04.17-pygt-0.9.4b \
+    ./cuda8.0/cudnn6_libdnn/caffe_gt-2017.04.17/pygt-0.9.4b
+docker push turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.04.17-pygt-0.9.4b
 
 docker build --pull --no-cache \
     -t turagalab/greentea:cuda8.0-cudnn6-caffe_gt-2017.04.17 \
@@ -20,10 +20,10 @@ docker push turagalab/greentea:cuda8.0-cudnn6-caffe_gt-2017.04.17-pygt-0.9.4b
 
 docker build --pull --no-cache \
     -t turagalab/greentea:cuda8.0-libdnn-caffe_gt-2016.12.05 \
-    ./cuda8.0/cudnn5+libdnn/caffe_gt-2016.12.05
+    ./cuda8.0/cudnn5_libdnn/caffe_gt-2016.12.05
 docker build        --no-cache \
     -t turagalab/greentea:cuda8.0-libdnn-caffe_gt-2016.12.05-pygt-0.9.4b \
-    ./cuda8.0/cudnn5+libdnn/caffe_gt-2016.12.05/pygt-0.9.4b
+    ./cuda8.0/cudnn5_libdnn/caffe_gt-2016.12.05/pygt-0.9.4b
 
 docker build --pull --no-cache \
     -t turagalab/greentea:libdnn-caffe_gt-2016.12.05 \
