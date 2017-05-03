@@ -52,4 +52,17 @@ ENV PYTHONPATH $PYCAFFE_ROOT:$PYTHONPATH
 ENV PATH $CAFFE_ROOT/build/tools:$PYCAFFE_ROOT:$PATH
 RUN echo "$CAFFE_ROOT/build/lib" >> /etc/ld.so.conf.d/caffe.conf && ldconfig
 
+WORKDIR /opt/malis
+
+RUN git clone -b master --depth 1 https://github.com/srinituraga/malis.git . && \
+    pip install --upgrade numpy==1.11.0 && \
+    python setup.py install
+
+WORKDIR /opt/waterz
+
+ENV CLONE_TAG=master
+
+RUN git clone -b ${CLONE_TAG} --depth 1 https://github.com/funkey/waterz.git . && \
+    python setup.py install
+
 WORKDIR /workspace
