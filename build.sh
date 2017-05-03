@@ -1,4 +1,9 @@
 docker build --pull --no-cache \
+    -t turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.05.02-conda \
+    ./cuda8.0/cudnn6_libdnn/caffe_gt-2017.05.02-conda/
+docker push turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.05.02-conda
+
+docker build --pull --no-cache \
     -t turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.04.17 \
     ./cuda8.0/cudnn6_libdnn/caffe_gt-2017.04.17/
 docker push turagalab/greentea:cuda8.0-cudnn6_libdnn-caffe_gt-2017.04.17
