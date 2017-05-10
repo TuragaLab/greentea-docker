@@ -32,6 +32,7 @@ WORKDIR $CAFFE_ROOT
 RUN git clone ${CAFFE_REPOSITORY} . && \
     git checkout ${CAFFE_REVISION}
 RUN pip install --upgrade pip && \
+    pip install wheel && \
     for req in $(cat python/requirements.txt) pydot; do pip install $req; done
 
 WORKDIR $CAFFE_ROOT/build
